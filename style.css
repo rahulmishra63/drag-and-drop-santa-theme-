@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./image/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container{
+    /* border: 1px solid black; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+.box img{
+    width: 100%;
+}
+/* .boxIn{
+    border: 1px dashed black;
+} */
+#dragBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+#dragBox img{
+    width: 180px;
+}
+.boxDragging{
+    opacity: 0;
+}
